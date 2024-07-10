@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta Especial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f2;
+            color: #ff3399;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        h1 {
+            color: #ff66b2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            position: relative;
+            perspective: 1000px;
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+        }
+
+        .carousel-item {
+            flex: 0 0 auto;
+            opacity: 1;
+            transition: transform 0.5s, opacity 0.5s;
+            margin: 0 5px;
+            cursor: pointer;
+            transform-origin: center;
+        }
+
+        .carousel-item.active {
+            opacity: 1;
+            transform: scale(1.5);
+        }
+
+        .carousel-item img {
+            max-width: 300px;
+            max-height: 300px;
+            border-radius: 10px;
+        }
+
+        .ella {
+            margin: 20px 0;
+        }
+
+        .ella img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .button {
+            background-color: #ff66b2;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #ff4d94;
+        }
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            fill: #ff3399;
+        }
+
+        .icon.left {
+            left: 10px;
+        }
+
+        .icon.right {
+            right: 10px;
+        }
+
+        .heart-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .promise-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .promise-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .tulip-icon {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+        }
+
+        .tulip-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .tulip-container img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <img src="iconos/TulipanRosa.png" alt="Corazón" class="heart-icon">
+            Un Mensaje Especial para Ti
+            <img src="iconos/TulipanRosa.png" alt="Corazón" class="heart-icon">
+        </h1>
+        <h2>Mi niña hermosa</h2>
+  
+
+        <div class="ella">
+            <img src="gallery/ella.jpg" alt="ella1">
+        </div>
+        
+        <p>
+            Cuando te conocí, no pensé en lo que provocarías en mí. Me has hecho sentir mucho en muy poco tiempo, y adoro ser la persona con quien tú quieres estar. Sabes bien que el miedo me gobernaba y rechazaba la idea de estar con alguien nuevamente. Pero ahora soy incapaz de pensar en que me faltes en algún momento. Te has vuelto indispensable para mí. Me he enamorado de tus tratos, tus besos, tu personalidad alocada, tu amor sin límites, de ti como mujer.
+        </p>
+        <div class="carousel" id="carousel1">
+            <div class="carousel-track" id="carousel-track1">
+                <div class="carousel-item"><img src="gallery/cepillo.jpg" alt="Foto 1"></div>
+                <div class="carousel-item active"><img src="gallery/espejoCasaBarbara.jpg" alt="Foto 3"></div>
+                <div class="carousel-item"><img src="gallery/espejoBeso.jpg" alt="Foto 2"></div>
+                <div class="carousel-item"><img src="gallery/filtroCorazones.jpg" alt="Foto 5"></div>
+                <div class="carousel-item"><img src="gallery/espejoPiezaPapa.jpg" alt="Foto 4"></div>
+                <div class="carousel-item"><img src="gallery/sonrisas.jpg" alt="Foto 6"></div>
+            </div>
+        </div>
+        <p>
+            Cada momento contigo ha sido un fuerte abrazo y un enorme beso para mi corazón, soy feliz con verte sonreír, escucharte, admirar tus ojos o acariciar tu cabello.
+        </p>
+        <div class="carousel" id="carousel2">
+            <div class="carousel-track" id="carousel-track2">
+                <div class="carousel-item"><img src="gallery/corazonCarlJr.jpg" alt="Foto 1"></div>
+                <div class="carousel-item active"><img src="gallery/Durmiendo.jpg" alt="Foto 3"></div>
+                <div class="carousel-item"><img src="gallery/gatito.jpg" alt="Foto 2"></div>
+            </div>
+        </div>
+        <p>
+            No quiero estar con nadie más porque mi corazón te eligió a ti, quiere quererte solo a ti, y bajo esta condición, prometo estar a tu lado día y noche si así me lo permites, porque no encuentro mejor manera de vivir la vida que me tocó si no es compartiéndola contigo.<br><br>
+        </p>
+
+        <ul class="promise-list">
+            <li><img src="iconos/CorazonAzul.png" alt="Corazón" class="heart-icon"> Prometo respetarte cada día de mi vida junto a ti, respetaré tus sueños, tus límites y sobre todo respetaré tu amor</li>
+            <li><img src="iconos/CorazonLila.png" alt="Corazón" class="heart-icon"> Prometo cuidarte sin importar qué suceda, tú serás lo más importante en mi vida y siempre seré tu lugar seguro</li>
+            <li><img src="iconos/CorazonMorado.png" alt="Corazón" class="heart-icon"> Prometo hacerte sonreír en los días malos y en los momentos de tristeza, no dejaré que muera esa sonrisa hermosa que me enamoró de ti</li>
+            <li><img src="iconos/CorazonNaranja.png" alt="Corazón" class="heart-icon"> Prometo escucharte siempre, si tienes algo que contarme, tu día, tus tristezas y tus felicidades</li>
+            <li><img src="iconos/CorazonVerde.png" alt="Corazón" class="heart-icon"> Prometo nunca dejar de quererte, guiaré mi camino junto a ti y este amor sincero que tengo por ti nunca decaerá o lo pondrás en duda </li>
+        </ul>
+
+        <p><img src="iconos/CorazonRojo.png" alt="Corazón" class="heart-icon"> Hoy lo declaro mi amor por ti, te entrego mi corazón</p>
+
+    </div>
+
+    <script>
+        function initCarousel(carouselId, trackId) {
+            const track = document.getElementById(trackId);
+            const items = track.children;
+            let activeIndex = 2;
+
+            function updateCarousel() {
+                const angle = 30;
+                const zOffset = 150;
+                for (let index = 0; index < items.length; index++) {
+                    const item = items[index];
+                    const offset = index - activeIndex;
+                    item.style.transform = `rotateY(${offset * angle}deg) translateZ(${Math.abs(offset) === 0 ? zOffset : zOffset / 1.5}px)`;
+                    item.style.opacity = Math.abs(offset) === 0 ? '1' : '0.5';
+                }
+                track.style.transform = `translateX(calc(50% - ${items[activeIndex].offsetLeft + items[activeIndex].clientWidth / 2}px))`;
+            }
+
+            function selectImage(index) {
+                activeIndex = index;
+                updateCarousel();
+            }
+
+            for (let index = 0; index < items.length; index++) {
+                const item = items[index];
+                item.addEventListener('click', () => selectImage(index));
+            }
+
+            let startX;
+            let isDragging = false;
+
+            track.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].pageX;
+                isDragging = true;
+            });
+
+            track.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+                const deltaX = e.touches[0].pageX - startX;
+                if (deltaX > 50) {
+                    selectImage((activeIndex - 1 + items.length) % items.length);
+                    isDragging = false;
+                } else if (deltaX < -50) {
+                    selectImage((activeIndex + 1) % items.length);
+                    isDragging = false;
+                }
+            });
+
+            track.addEventListener('touchend', () => {
+                isDragging = false;
+            });
+
+            updateCarousel();
+        }
+
+        initCarousel('carousel1', 'carousel-track1');
+        initCarousel('carousel2', 'carousel-track2');
+
+    </script>
+</body>
+</html>
